@@ -1,13 +1,14 @@
 public class Main {
     static void main() {
         /*megjegyzés, bármilyen néven lehetett volna implementálni az osztályt,
-          a numbets csak az miatt lett, mert számokat szeretnék bele tölteni */
+          a numbers csak az miatt lett, mert számokat szeretnék bele tölteni */
 
         Numbers<Integer> numbers1 = new Numbers<>(5);
         Numbers<Integer> numbers2 = new Numbers<>(5);
 
         //Bemutatok néhány exceptiont:
 
+        //ehhez kellett a maxSize implementáció, mivel a generic verziója végtelenig növelhető
         /*numbers1.removeFirst();
         numbers1.getFirst();
         numbers1.removeLast();
