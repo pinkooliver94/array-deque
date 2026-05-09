@@ -1,146 +1,162 @@
+import util.ArrayDequeHelper;
+
 public class Main {
+
     static void main() {
         /*megjegyzés, bármilyen néven lehetett volna implementálni az osztályt,
           a numbers csak az miatt lett, mert számokat szeretnék bele tölteni */
 
-        Numbers<Integer> numbers1 = new Numbers<>(5);
-        Numbers<Integer> numbers2 = new Numbers<>(5);
+        ArrayDequeHelper<Integer> arrayDequeHelper1 = new ArrayDequeHelper<>(5);
+        ArrayDequeHelper<Integer> arrayDequeHelper2 = new ArrayDequeHelper<>(5);
+
+        //Deque<String> myDeque = new ArrayDeque<>(5);
 
         //Bemutatok néhány exceptiont:
 
         //ehhez kellett a maxSize implementáció, mivel a generic verziója végtelenig növelhető
-        /*numbers1.removeFirst();
-        numbers1.getFirst();
-        numbers1.removeLast();
-        numbers1.getLast();*/
+        //arrayDequeHelper1.removeFirst();
+        //arrayDequeHelper1.getFirst();
+        //arrayDequeHelper1.removeLast();
+        //arrayDequeHelper1.getLast();
 
         /*
         //elejéhez adás
-        numbers1.addFirst(1);
-        numbers1.addFirst(2);
-        numbers1.addFirst(3);
-        numbers1.addFirst(4);
-        numbers1.addFirst(5);
+        arrayDequeHelper1.addFirst(1);
+        arrayDequeHelper1.addFirst(2);
+        arrayDequeHelper1.addFirst(3);
+        arrayDequeHelper1.addFirst(4);
+        arrayDequeHelper1.addFirst(5);
 
-        numbers1.printElements();
+        arrayDequeHelper1.printElements();
         separator();
 
         //végéhez adás
-        numbers2.addFirst(5);
-        numbers2.addFirst(4);
-        numbers2.addFirst(3);
-        numbers2.addFirst(2);
-        numbers2.addFirst(1);
+        arrayDequeHelper2.addFirst(5);
+        arrayDequeHelper2.addFirst(4);
+        arrayDequeHelper2.addFirst(3);
+        arrayDequeHelper2.addFirst(2);
+        arrayDequeHelper2.addFirst(1);
 
-        numbers2.printElements();
-        */
+        arrayDequeHelper2.printElements();
+         */
+
 
         /*
         //elejéhez adás offerrel
-        numbers1.offerFirst(1);
-        numbers1.offerFirst(2);
-        numbers1.offerFirst(3);
-        numbers1.offerFirst(4);
-        numbers1.offerFirst(5);
+        arrayDequeHelper1.offerFirst(1);
+        arrayDequeHelper1.offerFirst(2);
+        arrayDequeHelper1.offerFirst(3);
+        arrayDequeHelper1.offerFirst(4);
+        arrayDequeHelper1.offerFirst(5);
 
-        numbers1.printElements();
+        arrayDequeHelper1.printElements();
         separator();
 
         //végéhez adás offerrel
-        numbers2.offerFirst(5);
-        numbers2.offerFirst(4);
-        numbers2.offerFirst(3);
-        numbers2.offerFirst(2);
-        numbers2.offerFirst(1);
+        arrayDequeHelper2.offerFirst(5);
+        arrayDequeHelper2.offerFirst(4);
+        arrayDequeHelper2.offerFirst(3);
+        arrayDequeHelper2.offerFirst(2);
+        arrayDequeHelper2.offerFirst(1);
 
-        numbers2.printElements();
-        */
+        arrayDequeHelper2.printElements();
+         */
+        
 
         /*
-        numbers1.addFirst(1);
-        numbers1.addFirst(2);
-        numbers1.addFirst(3);
-        numbers1.addFirst(4);
-        numbers1.addFirst(5);
+        arrayDequeHelper1.addFirst(1);
+        arrayDequeHelper1.addFirst(2);
+        arrayDequeHelper1.addFirst(3);
+        arrayDequeHelper1.addFirst(4);
+        arrayDequeHelper1.addFirst(5);
 
-        numbers1.printElements();
+        arrayDequeHelper1.printElements();
         separator();
 
-        numbers2.addFirst(5);
-        numbers2.addFirst(4);
-        numbers2.addFirst(3);
-        numbers2.addFirst(2);
-        numbers2.addFirst(1);
+        arrayDequeHelper2.addFirst(5);
+        arrayDequeHelper2.addFirst(4);
+        arrayDequeHelper2.addFirst(3);
+        arrayDequeHelper2.addFirst(2);
+        arrayDequeHelper2.addFirst(1);
 
-        numbers2.printElements();
+        arrayDequeHelper2.printElements();
         separator();
 
+         */
+
+        /*
         //elveszünk az elejéről
-        numbers1.removeFirst();
-        numbers2.pollFirst();
+        arrayDequeHelper1.removeFirst();
+        arrayDequeHelper2.pollFirst();
 
-        numbers1.printElements();
+        arrayDequeHelper1.printElements();
         separator();
-        numbers2.printElements();
+        arrayDequeHelper2.printElements();
         separator();
 
         //elveszünk a végéről
-        numbers1.removeLast();
-        numbers2.pollLast();
+        arrayDequeHelper1.removeLast();
+        arrayDequeHelper2.pollLast();
 
-        numbers1.printElements();
+        arrayDequeHelper1.printElements();
         separator();
-        numbers2.printElements();
-        */
+        arrayDequeHelper2.printElements();
+         */
+        
 
         /*
-        numbers1.addFirst(1);
-        numbers1.addFirst(2);
-        numbers1.addFirst(3);
-        numbers1.addFirst(4);
-        numbers1.addFirst(5);
+        arrayDequeHelper1.addFirst(1);
+        arrayDequeHelper1.addFirst(2);
+        arrayDequeHelper1.addFirst(3);
+        arrayDequeHelper1.addFirst(4);
+        arrayDequeHelper1.addFirst(5);
 
         //megnézzük az elejét és a végét
 
-        System.out.println(numbers1.getFirst());
-        System.out.println(numbers1.peekFirst());
-        System.out.println(numbers1.getLast());
-        System.out.println(numbers1.peekLast());
-        */
+        System.out.println(arrayDequeHelper1.getFirst());
+        System.out.println(arrayDequeHelper1.peekFirst());
+        System.out.println(arrayDequeHelper1.getLast());
+        System.out.println(arrayDequeHelper1.peekLast());
+
+         */
+        
 
         /*
         //FIFO példa
-        numbers1.addLast(1);
-        numbers1.addLast(2);
-        numbers1.addLast(3);
+        arrayDequeHelper1.addLast(1);
+        arrayDequeHelper1.addLast(2);
+        arrayDequeHelper1.addLast(3);
 
-        numbers1.printElements();
+        arrayDequeHelper1.printElements();
         separator();
 
-        numbers1.removeFirst();
-        numbers1.removeFirst();
+        arrayDequeHelper1.removeFirst();
+        arrayDequeHelper1.removeFirst();
 
-        numbers1.printElements();
+        arrayDequeHelper1.printElements();
 
          */
+
+         
 
         /*
+        
         //LIFO példa
 
-        numbers1.addFirst(1);
-        numbers1.addFirst(2);
-        numbers1.addFirst(3);
+        arrayDequeHelper1.addFirst(1);
+        arrayDequeHelper1.addFirst(2);
+        arrayDequeHelper1.addFirst(3);
 
-        numbers1.printElements();
+        arrayDequeHelper1.printElements();
         separator();
 
-        numbers1.removeFirst();
-        numbers1.removeFirst();
+        arrayDequeHelper1.removeFirst();
+        arrayDequeHelper1.removeFirst();
 
-        numbers1.printElements();
-
+        arrayDequeHelper1.printElements();
 
          */
+        
 
     }
     static void separator() {

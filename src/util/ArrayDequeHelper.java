@@ -1,11 +1,14 @@
+package util;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class Numbers<E> {
+public class ArrayDequeHelper<E> {
+
     private int maxSize;
     private Deque<E> deque;
 
-    public Numbers(int maxSize) {
+    public ArrayDequeHelper(int maxSize) {
         this.maxSize = maxSize;
         this.deque = new ArrayDeque<>();
     }
