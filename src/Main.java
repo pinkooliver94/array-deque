@@ -3,8 +3,6 @@ import util.ArrayDequeHelper;
 public class Main {
 
     static void main() {
-        /*megjegyzés, bármilyen néven lehetett volna implementálni az osztályt,
-          a numbers csak az miatt lett, mert számokat szeretnék bele tölteni */
 
         ArrayDequeHelper<Integer> arrayDequeHelper1 = new ArrayDequeHelper<>(5);
         ArrayDequeHelper<Integer> arrayDequeHelper2 = new ArrayDequeHelper<>(5);
@@ -18,7 +16,6 @@ public class Main {
         //arrayDequeHelper1.getFirst();
         //arrayDequeHelper1.removeLast();
         //arrayDequeHelper1.getLast();
-
         /*
         //elejéhez adás
         arrayDequeHelper1.addFirst(1);
@@ -31,16 +28,14 @@ public class Main {
         separator();
 
         //végéhez adás
-        arrayDequeHelper2.addFirst(5);
-        arrayDequeHelper2.addFirst(4);
-        arrayDequeHelper2.addFirst(3);
-        arrayDequeHelper2.addFirst(2);
-        arrayDequeHelper2.addFirst(1);
+        arrayDequeHelper2.addLast(5);
+        arrayDequeHelper2.addLast(4);
+        arrayDequeHelper2.addLast(3);
+        arrayDequeHelper2.addLast(2);
+        arrayDequeHelper2.addLast(1);
 
         arrayDequeHelper2.printElements();
          */
-
-
         /*
         //elejéhez adás offerrel
         arrayDequeHelper1.offerFirst(1);
@@ -60,9 +55,7 @@ public class Main {
         arrayDequeHelper2.offerFirst(1);
 
         arrayDequeHelper2.printElements();
-         */
-        
-
+        */
         /*
         arrayDequeHelper1.addFirst(1);
         arrayDequeHelper1.addFirst(2);
@@ -82,9 +75,6 @@ public class Main {
         arrayDequeHelper2.printElements();
         separator();
 
-         */
-
-        /*
         //elveszünk az elejéről
         arrayDequeHelper1.removeFirst();
         arrayDequeHelper2.pollFirst();
@@ -101,9 +91,7 @@ public class Main {
         arrayDequeHelper1.printElements();
         separator();
         arrayDequeHelper2.printElements();
-         */
-        
-
+        */
         /*
         arrayDequeHelper1.addFirst(1);
         arrayDequeHelper1.addFirst(2);
@@ -117,10 +105,7 @@ public class Main {
         System.out.println(arrayDequeHelper1.peekFirst());
         System.out.println(arrayDequeHelper1.getLast());
         System.out.println(arrayDequeHelper1.peekLast());
-
-         */
-        
-
+        */
         /*
         //FIFO példa
         arrayDequeHelper1.addLast(1);
@@ -131,16 +116,11 @@ public class Main {
         separator();
 
         arrayDequeHelper1.removeFirst();
-        arrayDequeHelper1.removeFirst();
+        //arrayDequeHelper1.removeFirst();
 
         arrayDequeHelper1.printElements();
-
-         */
-
-         
-
+        */
         /*
-        
         //LIFO példa
 
         arrayDequeHelper1.addFirst(1);
@@ -151,15 +131,14 @@ public class Main {
         separator();
 
         arrayDequeHelper1.removeFirst();
-        arrayDequeHelper1.removeFirst();
+        //arrayDequeHelper1.removeFirst();
 
         arrayDequeHelper1.printElements();
-
          */
-        
-
     }
+
     static void separator() {
+
         System.out.println("-------------------------------------");
     }
 }
